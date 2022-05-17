@@ -1,0 +1,5 @@
+<resources>
+    <string name="start_camera" translatable="false">Start Camera</string>
+    <string name="instruction" translatable="false">아래 단어들 중 하나를 선택해주세요.</string>
+    <string name="text" translatable="false">text</string>
+</resources>
