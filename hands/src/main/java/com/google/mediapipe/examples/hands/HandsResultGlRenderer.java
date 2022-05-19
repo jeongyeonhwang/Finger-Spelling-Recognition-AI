@@ -23,6 +23,7 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 //import android.media.MediaRouter2;
 import android.opengl.GLES20;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -78,7 +79,11 @@ public class HandsResultGlRenderer implements ResultGlRenderer<HandsResult> {
   private int positionHandle;
   private int projectionMatrixHandle;
   private int colorHandle;
-  private char data;
+  private String data;
+  public String[] gesture = {"ㄱ",  "ㄴ",  "ㄷ",  "ㄹ",  "ㅁ",  "ㅂ",  "ㅅ",  "ㅇ",
+          "ㅈ",  "ㅊ",  "ㅋ",  "ㅌ",  "ㅍ",  "ㅎ",  "ㅏ",
+          "ㅑ",  "ㅓ",  "ㅕ",  "ㅗ",  "ㅛ",  "ㅜ",  "ㅠ",
+          "ㅡ",  "ㅣ",  "ㅐ",  "ㅒ",  "ㅔ",  "ㅖ",  "ㅢ",  "ㅚ",  "ㅟ"};
 
   private int loadShader(int type, String shaderCode) {
     int shader = GLES20.glCreateShader(type);
@@ -215,8 +220,8 @@ public class HandsResultGlRenderer implements ResultGlRenderer<HandsResult> {
     GLES20.glDrawArrays(GLES20.GL_TRIANGLE_FAN, 0, vertexCount);
   } //drawCircle
 
-
   private void makeAngle(float[][] vertices) { //각도구하는 함수
+
     float[][] joint = new float[21][3]; // 21개 점의 x,y,z의 좌표
     float[][] v1 = new float[20][3]; //v1_n
     float[][] v2 = new float[20][3]; //v2_n
@@ -306,10 +311,6 @@ public class HandsResultGlRenderer implements ResultGlRenderer<HandsResult> {
     float max = output[0][0];
     int maxIndex = 0;
 
-    char[] gesture = {'ㄱ',  'ㄴ',  'ㄷ',  'ㄹ',  'ㅁ',  'ㅂ',  'ㅅ',  'ㅇ',
-            'ㅈ',  'ㅊ',  'ㅋ',  'ㅌ',  'ㅍ',  'ㅎ',  'ㅏ',
-            'ㅑ',  'ㅓ',  'ㅕ',  'ㅗ',  'ㅛ',  'ㅜ',  'ㅠ',
-            'ㅡ',  'ㅣ',  'ㅐ',  'ㅒ',  'ㅔ',  'ㅖ',  'ㅢ',  'ㅚ',  'ㅟ'};
 
     for (int i=0 ; i < output[0].length; i++) {
 
@@ -319,11 +320,16 @@ public class HandsResultGlRenderer implements ResultGlRenderer<HandsResult> {
       }
       data = gesture[maxIndex]; // data 이년을 전달해야됨
 
-      //Toast.makeText(getContext(), data, Toast.LENGTH_SHORT).show();
-      //Log.i(TAG, String.format("***index*** %c ", gesture[maxIndex]));
+      //Log.i(TAG, getdata());
+      Toast.makeText(getContext(), data, Toast.LENGTH_SHORT).show();
+      Log.i(TAG, String.format("***************** %s ", data));
     }
 
   } //makeAngle
+
+  public String getdata(){
+    return this.data;
+  }
 
   private Interpreter getTfliteInterpreter(String modelPath){
     try {

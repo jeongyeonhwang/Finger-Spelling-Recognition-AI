@@ -50,11 +50,9 @@ import java.util.jar.JarEntry;
 /** Main activity of MediaPipe Hands app. */
 public class MainActivity extends AppCompatActivity {
   private static final String TAG = "MainActivity";
-
   private Hands hands;
   // Run the pipeline and the model inference on GPU or CPU.
   private static final boolean RUN_ON_GPU = true;
-
 
   private enum InputSource {
     UNKNOWN,
@@ -74,6 +72,8 @@ public class MainActivity extends AppCompatActivity {
   private CameraInput cameraInput;
 
   private SolutionGlSurfaceView<HandsResult> glSurfaceView;
+  private HandsResultGlRenderer hg;
+  private String b_data;
 
 
   @Override
@@ -82,18 +82,10 @@ public class MainActivity extends AppCompatActivity {
     setContentView(R.layout.activity_main);
     setupStaticImageDemoUiComponents();
     setupLiveDemoUiComponents();
-    Intent intent = getIntent();
-    String datas = intent.getStringExtra("data");
-    TextView textView = (TextView)findViewById(R.id.text_view);
-    textView.setText(datas);
-    /******** data 가져오는 코드
-    //TextView textView = (TextView)findViewById(R.id.text_view);
-    //textView.setText(datas);
-    /***
-    //TextView textView = (TextView)findViewById(R.id.text_view);
-    //HandsResultGlRenderer hand = new HandsResultGlRenderer();
-    //textView.setText(hand.getData());
-    //setupVideoDemoUiComponents();
+    /*** HandsResultGIRenderer에서 data 가져오는 코드 오류뜸 ㅠㅠ
+    hg = new HandsResultGlRenderer();
+    b_data = hg.getdata();
+    Log.i(TAG, String.format("******************index************* %s ", b_data)); 
      ***/
   }
 
@@ -106,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
       cameraInput.setNewFrameListener(textureFrame -> hands.send(textureFrame));
       glSurfaceView.post(this::startCamera);
       glSurfaceView.setVisibility(View.VISIBLE);
+      //TextView textView = (TextView)findViewById(R.id.text_view);
+      //textView.setText(b_data);
     }
   }
 
@@ -252,7 +246,6 @@ public class MainActivity extends AppCompatActivity {
     frameLayout.addView(glSurfaceView);
     glSurfaceView.setVisibility(View.VISIBLE);
     frameLayout.requestLayout();
-
     // 이 자리는 카메라 켜지고 바로 실행됨
   }
 
