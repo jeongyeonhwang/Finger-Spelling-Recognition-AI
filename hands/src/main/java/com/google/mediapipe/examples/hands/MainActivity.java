@@ -102,13 +102,6 @@ public class MainActivity extends AppCompatActivity {
     setupStaticImageDemoUiComponents();
     //setupVideoDemoUiComponents();
     setupLiveDemoUiComponents();
-    Button loadImageButton = findViewById(R.id.button_complete);
-    loadImageButton.setOnClickListener(
-            v -> {
-      if (inputSource == InputSource.CAMERA) {
-        return;
-      }
-    }); //완료 버튼을 눌렀을 때 -> 완료 화면으로 전환??
   }
 
   @Override
@@ -570,6 +563,12 @@ public class MainActivity extends AppCompatActivity {
 
     }); //myRef.addValueEventListener
 
+    Button bt_com = findViewById(R.id.button_complete);
+    bt_com.setOnClickListener(new Button.OnClickListener(){ // button_complete(완료버튼) 눌렀을 때 화면 넘어가는지?
+      public void onClick(View v){
+        setContentView(R.layout.result);
+      }
+    });
   } //makeAngle
 
 
