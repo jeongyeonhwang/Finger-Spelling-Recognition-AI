@@ -6,7 +6,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/button_complete"
+        android:id="@+id/complete"
         style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,8 +17,9 @@
         <Button
             android:id="@+id/button_complete"
             style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="wrap_content"
+            android:layout_width="228dp"
             android:layout_height="wrap_content"
+            android:background="#FFC107"
             android:text="완료"
             android:textColor="#000000"
             android:textSize="24sp" />
@@ -27,7 +28,7 @@
     <FrameLayout
         android:id="@+id/preview_display_layout"
         android:layout_width="match_parent"
-        android:layout_height="480dp"/>
+        android:layout_height="480dp" />
 
 
     <LinearLayout
@@ -38,9 +39,9 @@
         <TextView
             android:id="@+id/text_view2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:background="#FFFFFF"
+            android:background="#74FFC107"
             android:gravity="center"
             android:text="저희 앱 이름은"
             android:textColor="#000000"
@@ -50,7 +51,8 @@
             android:id="@+id/clear"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="93dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#FFC107"
             android:text="clear"
             android:textColor="#000000"
             android:textStyle="bold" />
@@ -101,8 +103,8 @@
         <TextView
             android:id="@+id/text_view"
             android:layout_width="243dp"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:layout_height="match_parent"
+            android:background="#74FFC107"
             android:gravity="center"
             android:text="ㅇㅅㅅ"
             android:textColor="#000000"
@@ -113,7 +115,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="83dp"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="#ACA7A7"
             android:text="del"
             android:textColor="#000000"
             android:textStyle="bold" />
@@ -123,7 +125,7 @@
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#FFFFFF"
+            android:background="#FFC107"
             android:text="enter"
             android:textColor="#000000"
             android:textStyle="bold" />
