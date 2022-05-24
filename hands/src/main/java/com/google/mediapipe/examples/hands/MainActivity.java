@@ -98,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.execute);
+    setContentView(R.layout.activity_main);
     setupStaticImageDemoUiComponents();
     //setupVideoDemoUiComponents();
     setupLiveDemoUiComponents();
@@ -113,9 +113,7 @@ public class MainActivity extends AppCompatActivity {
       cameraInput.setNewFrameListener(textureFrame -> hands.send(textureFrame));
       glSurfaceView.post(this::startCamera);
       glSurfaceView.setVisibility(View.VISIBLE);
-    } /*else if (inputSource == InputSource.VIDEO) {
-      videoInput.resume();
-    }*/
+    }
   }
 
   @Override
@@ -196,59 +194,12 @@ public class MainActivity extends AppCompatActivity {
                         }
                       }
                     });
-    /*
-    Button loadImageButton = findViewById(R.id.button_load_picture);
-    loadImageButton.setOnClickListener(
-        v -> {
-          if (inputSource != InputSource.IMAGE) {
-            stopCurrentPipeline();
-            setupStaticImageModePipeline();
-          }
-          // Reads images from gallery.
-          Intent pickImageIntent = new Intent(Intent.ACTION_PICK);
-          pickImageIntent.setDataAndType(MediaStore.Images.Media.INTERNAL_CONTENT_URI, "image/*");
-          imageGetter.launch(pickImageIntent);
-        }); */
+
     try {
       imageView = new HandsResultImageView(this);
     } catch (IOException e) {
       e.printStackTrace();
     }
-  }
-
-
-  /** Sets up core workflow for static image mode. */
-  private void setupStaticImageModePipeline() {
-    this.inputSource = InputSource.IMAGE;
-    // Initializes a new MediaPipe Hands solution instance in the static image mode.
-    hands =
-            new Hands(
-                    this,
-                    HandsOptions.builder()
-                            .setStaticImageMode(true)
-                            .setMaxNumHands(2)
-                            .setRunOnGpu(RUN_ON_GPU)
-                            .build());
-
-    // Connects MediaPipe Hands solution to the user-defined HandsResultImageView.
-    hands.setResultListener(
-            handsResult -> {
-              //logWristLandmark(handsResult, /*showPixelValues=*/ true);
-              try {
-                imageView.setHandsResult(handsResult);
-              } catch (URISyntaxException e) {
-                e.printStackTrace();
-              }
-              runOnUiThread(() -> imageView.update());
-            });
-    hands.setErrorListener((message, e) -> Log.e(TAG, "MediaPipe Hands error:" + message));
-
-    // Updates the preview layout.
-    FrameLayout frameLayout = findViewById(R.id.preview_display_layout);
-    frameLayout.removeAllViewsInLayout();
-    imageView.setImageDrawable(null);
-    frameLayout.addView(imageView);
-    imageView.setVisibility(View.VISIBLE);
   }
 
   /** Sets up the UI components for the live demo with camera input. */
@@ -488,7 +439,8 @@ public class MainActivity extends AppCompatActivity {
     }
     TextView tv = findViewById(R.id.text_view);
     tv.setText(data);
-    Toast.makeText(this,"%f"+max,Toast.LENGTH_SHORT).show(); //정확도값 토스트로 띄움
+    Toast.makeText(this,"정확도 : %f"+max,Toast.LENGTH_SHORT).show(); //정확도값 토스트로 띄움
+
 
     myRef = database.getReference(String.valueOf(data));
     myRef.addValueEventListener(new ValueEventListener() {
@@ -498,15 +450,9 @@ public class MainActivity extends AppCompatActivity {
         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
           for (DataSnapshot snapshot2 : snapshot.getChildren()) {
             Log.i("osslog", snapshot2.getValue().toString());
-            int k=0;
-
-            if (k<6) {
+            for (int k = 0 ; k<6 ;k++){
               word_list[k] = snapshot2.getValue().toString();
             }
-            if (k>=6) {
-              continue;
-            }
-            k += 1;
           }
         }
 
@@ -563,10 +509,14 @@ public class MainActivity extends AppCompatActivity {
 
     }); //myRef.addValueEventListener
 
+    // 완료 버튼 클릭시 액티비티 전환
     Button bt_com = findViewById(R.id.button_complete);
-    bt_com.setOnClickListener(new Button.OnClickListener(){ // button_complete(완료버튼) 눌렀을 때 화면 넘어가는지?
-      public void onClick(View v){
-        setContentView(R.layout.result);
+    bt_com.setOnClickListener(new View.OnClickListener(){
+
+      @Override
+      public void onClick(View view){
+        Intent intent = new Intent(getApplicationContext(), resultActivity.class);
+        startActivity(intent);
       }
     });
   } //makeAngle

@@ -1,9 +1,74 @@
-<?xml version="1.0" encoding="utf-8" ?>
-    <LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/complete"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_start_camera"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:background="#B9EA8FAE"
+            android:text="start camera"
+            android:textColor="#000000"
+            android:textSize="16dp" />
+        <Button
+            android:id="@+id/button_complete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="완료"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/preview_display_layout"
+        android:layout_width="match_parent"
+        android:layout_height="450dp" >
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/priview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/text_view2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#74FFC107"
+            android:gravity="center"
+            android:text="저희 앱 이름은"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/clear"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="93dp"
+            android:layout_height="match_parent"
+            android:background="#FFC107"
+            android:text="clear"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
     <LinearLayout
         android:id="@+id/buttons"
         style="?android:attr/buttonBarStyle"
@@ -11,22 +76,103 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
-    <Button
-        android:id="@+id/button_start_camera"
-        style="?android:attr/buttonBarButtonStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/start_camera" />
-</LinearLayout>
-    <FrameLayout
-        android:id="@+id/preview_display_layout"
-        android:layout_width="match_parent"
-        android:layout_height="610dp">
-</FrameLayout>
+
+        <Button
+            android:id="@+id/button_voca1"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="옥수수"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_voca2"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="울산시"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_voca3"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="우수수"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+
     <LinearLayout
-        android:id="@+id/texts"
+        android:id="@+id/buttons_2"
+        style="?android:attr/buttonBarStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:orientation="horizontal" />
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_voca4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="와사삭"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_voca5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="유산소"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_voca6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아산시"
+            android:textColor="#000000" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/text_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="243dp"
+            android:layout_height="match_parent"
+            android:background="#74FFC107"
+            android:gravity="center"
+            android:text="ㅇㅅㅅ"
+            android:textColor="#000000"
+            android:textSize="45sp" />
+
+        <Button
+            android:id="@+id/delete"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:background="#ACA7A7"
+            android:text="del"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/enter"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFC107"
+            android:text="enter"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
 </LinearLayout>

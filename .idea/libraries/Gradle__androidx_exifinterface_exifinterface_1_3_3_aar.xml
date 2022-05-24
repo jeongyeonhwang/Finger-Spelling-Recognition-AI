@@ -1,12 +1,13 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.exifinterface:exifinterface:1.3.3@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ed9a91a6357054420eddffaddd3670df/transformed/exifinterface-1.3.3/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/28789f75f972d9a728ee175b579c80e5/transformed/exifinterface-1.3.3/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/ed9a91a6357054420eddffaddd3670df/transformed/exifinterface-1.3.3/jars/classes.jar!/" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ed9a91a6357054420eddffaddd3670df/transformed/exifinterface-1.3.3/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/ed9a91a6357054420eddffaddd3670df/transformed/exifinterface-1.3.3/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28789f75f972d9a728ee175b579c80e5/transformed/exifinterface-1.3.3/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/28789f75f972d9a728ee175b579c80e5/transformed/exifinterface-1.3.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/28789f75f972d9a728ee175b579c80e5/transformed/exifinterface-1.3.3/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

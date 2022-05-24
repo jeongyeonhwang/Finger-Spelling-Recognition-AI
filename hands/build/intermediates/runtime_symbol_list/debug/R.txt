@@ -172,6 +172,7 @@ int attr buttonCompat 0x7f030070
 int attr buttonGravity 0x7f030071
 int attr buttonIconDimen 0x7f030072
 int attr buttonPanelSideLayout 0x7f030073
+int attr buttonSize 0x7f030375
 int attr buttonStyle 0x7f030074
 int attr buttonStyleSmall 0x7f030075
 int attr buttonTint 0x7f030076
@@ -215,6 +216,7 @@ int attr chipStrokeColor 0x7f03009b
 int attr chipStrokeWidth 0x7f03009c
 int attr chipStyle 0x7f03009d
 int attr chipSurfaceColor 0x7f03009e
+int attr circleCrop 0x7f030376
 int attr circleRadius 0x7f03009f
 int attr circularProgressIndicatorStyle 0x7f0300a0
 int attr clickAction 0x7f0300a1
@@ -254,6 +256,7 @@ int attr colorPrimary 0x7f0300c2
 int attr colorPrimaryDark 0x7f0300c3
 int attr colorPrimarySurface 0x7f0300c4
 int attr colorPrimaryVariant 0x7f0300c5
+int attr colorScheme 0x7f030377
 int attr colorSecondary 0x7f0300c6
 int attr colorSecondaryVariant 0x7f0300c7
 int attr colorSurface 0x7f0300c8
@@ -461,6 +464,8 @@ int attr iconStartPadding 0x7f030191
 int attr iconTint 0x7f030192
 int attr iconTintMode 0x7f030193
 int attr iconifiedByDefault 0x7f030194
+int attr imageAspectRatio 0x7f030378
+int attr imageAspectRatioAdjust 0x7f030379
 int attr imageButtonStyle 0x7f030195
 int attr indeterminateAnimationType 0x7f030196
 int attr indeterminateProgressStyle 0x7f030197
@@ -724,6 +729,7 @@ int attr rippleColor 0x7f030298
 int attr round 0x7f030299
 int attr roundPercent 0x7f03029a
 int attr saturation 0x7f03029b
+int attr scopeUris 0x7f03037a
 int attr scrimAnimationDuration 0x7f03029c
 int attr scrimBackground 0x7f03029d
 int attr scrimVisibleHeightTrigger 0x7f03029e
@@ -993,6 +999,17 @@ int color checkbox_themeable_attribute_color 0x7f05002d
 int color colorAccent 0x7f05002e
 int color colorPrimary 0x7f05002f
 int color colorPrimaryDark 0x7f050030
+int color common_google_signin_btn_text_dark 0x7f0500d1
+int color common_google_signin_btn_text_dark_default 0x7f0500d2
+int color common_google_signin_btn_text_dark_disabled 0x7f0500d3
+int color common_google_signin_btn_text_dark_focused 0x7f0500d4
+int color common_google_signin_btn_text_dark_pressed 0x7f0500d5
+int color common_google_signin_btn_text_light 0x7f0500d6
+int color common_google_signin_btn_text_light_default 0x7f0500d7
+int color common_google_signin_btn_text_light_disabled 0x7f0500d8
+int color common_google_signin_btn_text_light_focused 0x7f0500d9
+int color common_google_signin_btn_text_light_pressed 0x7f0500da
+int color common_google_signin_btn_tint 0x7f0500db
 int color design_bottom_navigation_shadow_color 0x7f050031
 int color design_box_stroke_color 0x7f050032
 int color design_dark_default_color_background 0x7f050033
@@ -1635,12 +1652,33 @@ int drawable btn_radio_off_mtrl 0x7f07005c
 int drawable btn_radio_off_to_on_mtrl_animation 0x7f07005d
 int drawable btn_radio_on_mtrl 0x7f07005e
 int drawable btn_radio_on_to_off_mtrl_animation 0x7f07005f
+int drawable common_full_open_on_phone 0x7f070091
+int drawable common_google_signin_btn_icon_dark 0x7f070092
+int drawable common_google_signin_btn_icon_dark_focused 0x7f070093
+int drawable common_google_signin_btn_icon_dark_normal 0x7f070094
+int drawable common_google_signin_btn_icon_dark_normal_background 0x7f070095
+int drawable common_google_signin_btn_icon_disabled 0x7f070096
+int drawable common_google_signin_btn_icon_light 0x7f070097
+int drawable common_google_signin_btn_icon_light_focused 0x7f070098
+int drawable common_google_signin_btn_icon_light_normal 0x7f070099
+int drawable common_google_signin_btn_icon_light_normal_background 0x7f07009a
+int drawable common_google_signin_btn_text_dark 0x7f07009b
+int drawable common_google_signin_btn_text_dark_focused 0x7f07009c
+int drawable common_google_signin_btn_text_dark_normal 0x7f07009d
+int drawable common_google_signin_btn_text_dark_normal_background 0x7f07009e
+int drawable common_google_signin_btn_text_disabled 0x7f07009f
+int drawable common_google_signin_btn_text_light 0x7f0700a0
+int drawable common_google_signin_btn_text_light_focused 0x7f0700a1
+int drawable common_google_signin_btn_text_light_normal 0x7f0700a2
+int drawable common_google_signin_btn_text_light_normal_background 0x7f0700a3
 int drawable design_bottom_navigation_item_background 0x7f070060
 int drawable design_fab_background 0x7f070061
 int drawable design_ic_visibility 0x7f070062
 int drawable design_ic_visibility_off 0x7f070063
 int drawable design_password_eye 0x7f070064
 int drawable design_snackbar_background 0x7f070065
+int drawable googleg_disabled_color_18 0x7f0700a4
+int drawable googleg_standard_color_18 0x7f0700a5
 int drawable ic_clock_black_24dp 0x7f070066
 int drawable ic_keyboard_black_24dp 0x7f070067
 int drawable ic_launcher_background 0x7f070068
@@ -1752,6 +1790,8 @@ int id action_text 0x7f080040
 int id actions 0x7f080041
 int id activity_chooser_view_content 0x7f080042
 int id add 0x7f080043
+int id adjust_height 0x7f0801ae
+int id adjust_width 0x7f0801af
 int id alertTitle 0x7f080044
 int id aligned 0x7f080045
 int id all 0x7f080046
@@ -1764,6 +1804,7 @@ int id auto 0x7f08004c
 int id autoComplete 0x7f08004d
 int id autoCompleteToEnd 0x7f08004e
 int id autoCompleteToStart 0x7f08004f
+int id back 0x7f0801b0
 int id barrier 0x7f080050
 int id baseline 0x7f080051
 int id beginOnFirstDraw 0x7f080052
@@ -1772,11 +1813,17 @@ int id blocking 0x7f080054
 int id bottom 0x7f080055
 int id bounce 0x7f080056
 int id buttonPanel 0x7f080057
+int id button_back 0x7f0801b1
+int id button_complete 0x7f0801b2
 int id button_start_camera 0x7f080058
 int id button_voca1 0x7f0801ab
 int id button_voca2 0x7f0801ac
 int id button_voca3 0x7f0801ad
+int id button_voca4 0x7f0801b3
+int id button_voca5 0x7f0801b4
+int id button_voca6 0x7f0801b5
 int id buttons 0x7f080059
+int id buttons_2 0x7f0801b6
 int id cache_measures 0x7f08005a
 int id cancel_button 0x7f08005b
 int id center 0x7f08005c
@@ -1793,11 +1840,13 @@ int id chip3 0x7f080066
 int id chip_group 0x7f080067
 int id chronometer 0x7f080068
 int id circle_center 0x7f080069
+int id clear 0x7f0801b7
 int id clear_text 0x7f08006a
 int id clip_horizontal 0x7f08006b
 int id clip_vertical 0x7f08006c
 int id clockwise 0x7f08006d
 int id collapseActionView 0x7f08006e
+int id complete 0x7f0801b8
 int id confirm_button 0x7f08006f
 int id container 0x7f080070
 int id content 0x7f080071
@@ -1809,11 +1858,13 @@ int id counterclockwise 0x7f080076
 int id custom 0x7f080077
 int id customPanel 0x7f080078
 int id cut 0x7f080079
+int id dark 0x7f0801b9
 int id date_picker_actions 0x7f08007a
 int id decelerate 0x7f08007b
 int id decelerateAndComplete 0x7f08007c
 int id decor_content_parent 0x7f08007d
 int id default_activity_button 0x7f08007e
+int id delete 0x7f0801ba
 int id deltaRelative 0x7f08007f
 int id dependency_ordering 0x7f080080
 int id design_bottom_sheet 0x7f080081
@@ -1842,6 +1893,7 @@ int id edit_query 0x7f080097
 int id elastic 0x7f080098
 int id end 0x7f080099
 int id endToStart 0x7f08009a
+int id enter 0x7f0801bb
 int id enterAlways 0x7f08009b
 int id enterAlwaysCollapsed 0x7f08009c
 int id exitUntilCollapsed 0x7f08009d
@@ -1874,6 +1926,7 @@ int id homeAsUp 0x7f0800b7
 int id honorRequest 0x7f0800b8
 int id icon 0x7f0800b9
 int id icon_group 0x7f0800ba
+int id icon_only 0x7f0801bc
 int id ifRoom 0x7f0800bb
 int id ignore 0x7f0800bc
 int id ignoreRequest 0x7f0800bd
@@ -1891,6 +1944,7 @@ int id largeLabel 0x7f0800c8
 int id layout 0x7f0800c9
 int id left 0x7f0800ca
 int id leftToRight 0x7f0800cb
+int id light 0x7f0801bd
 int id line1 0x7f0800cc
 int id line3 0x7f0800cd
 int id linear 0x7f0800ce
@@ -1953,7 +2007,6 @@ int id multiply 0x7f080106
 int id navigation_header_container 0x7f080107
 int id never 0x7f080108
 int id noScroll 0x7f080109
-int id no_view 0x7f08010a
 int id none 0x7f08010b
 int id normal 0x7f08010c
 int id notification_background 0x7f08010d
@@ -1978,6 +2031,7 @@ int id pin 0x7f08011f
 int id position 0x7f080120
 int id postLayout 0x7f080121
 int id preview_display_layout 0x7f080122
+int id priview 0x7f0801be
 int id progress_circular 0x7f080123
 int id progress_horizontal 0x7f080124
 int id radio 0x7f080125
@@ -2074,7 +2128,9 @@ int id textTop 0x7f08017f
 int id text_input_end_icon 0x7f080180
 int id text_input_error_icon 0x7f080181
 int id text_input_start_icon 0x7f080182
+int id text_send 0x7f0801bf
 int id text_view 0x7f080183
+int id text_view2 0x7f0801c0
 int id textinput_counter 0x7f080184
 int id textinput_error 0x7f080185
 int id textinput_helper_text 0x7f080186
@@ -2109,6 +2165,7 @@ int id view_tree_saved_state_registry_owner 0x7f0801a2
 int id view_tree_view_model_store_owner 0x7f0801a3
 int id visible 0x7f0801a4
 int id visible_removing_fragment_view_tag 0x7f0801a5
+int id wide 0x7f0801c1
 int id withText 0x7f0801a6
 int id withinBounds 0x7f0801a7
 int id wrap 0x7f0801a8
@@ -2122,6 +2179,7 @@ int integer cancel_button_image_alpha 0x7f090004
 int integer config_tooltipAnimTime 0x7f090005
 int integer design_snackbar_text_max_lines 0x7f090006
 int integer design_tab_indicator_anim_duration_ms 0x7f090007
+int integer google_play_services_version 0x7f090015
 int integer hide_password_duration 0x7f090008
 int integer mtrl_badge_max_character_count 0x7f090009
 int integer mtrl_btn_anim_delay_ms 0x7f09000a
@@ -2191,6 +2249,7 @@ int layout design_navigation_menu 0x7f0b0029
 int layout design_navigation_menu_item 0x7f0b002a
 int layout design_text_input_end_icon 0x7f0b002b
 int layout design_text_input_start_icon 0x7f0b002c
+int layout execute 0x7f0b006f
 int layout material_chip_input_combo 0x7f0b002d
 int layout material_clock_display 0x7f0b002e
 int layout material_clock_display_divider 0x7f0b002f
@@ -2239,6 +2298,7 @@ int layout notification_template_custom_big 0x7f0b0059
 int layout notification_template_icon_group 0x7f0b005a
 int layout notification_template_part_chronometer 0x7f0b005b
 int layout notification_template_part_time 0x7f0b005c
+int layout result 0x7f0b0070
 int layout select_dialog_item_material 0x7f0b005d
 int layout select_dialog_multichoice_material 0x7f0b005e
 int layout select_dialog_singlechoice_material 0x7f0b005f
@@ -2297,6 +2357,24 @@ int string character_counter_overflowed_content_description 0x7f0e0020
 int string character_counter_pattern 0x7f0e0021
 int string chip_text 0x7f0e0022
 int string clear_text_end_icon_content_description 0x7f0e0023
+int string common_google_play_services_enable_button 0x7f0e0067
+int string common_google_play_services_enable_text 0x7f0e0068
+int string common_google_play_services_enable_title 0x7f0e0069
+int string common_google_play_services_install_button 0x7f0e006a
+int string common_google_play_services_install_text 0x7f0e006b
+int string common_google_play_services_install_title 0x7f0e006c
+int string common_google_play_services_notification_channel_name 0x7f0e006d
+int string common_google_play_services_notification_ticker 0x7f0e006e
+int string common_google_play_services_unknown_issue 0x7f0e006f
+int string common_google_play_services_unsupported_text 0x7f0e0070
+int string common_google_play_services_update_button 0x7f0e0071
+int string common_google_play_services_update_text 0x7f0e0072
+int string common_google_play_services_update_title 0x7f0e0073
+int string common_google_play_services_updating_text 0x7f0e0074
+int string common_google_play_services_wear_update_text 0x7f0e0075
+int string common_open_on_phone 0x7f0e0076
+int string common_signin_button_text 0x7f0e0077
+int string common_signin_button_text_long 0x7f0e0078
 int string error_icon_content_description 0x7f0e0024
 int string exposed_dropdown_menu_content_description 0x7f0e0025
 int string fab_transformation_scrim_behavior 0x7f0e0026
@@ -4119,6 +4197,10 @@ int styleable LinearProgressIndicator_indicatorDirectionLinear 1
 int[] styleable ListPopupWindow { 0x010102ac, 0x010102ad }
 int styleable ListPopupWindow_android_dropDownHorizontalOffset 0
 int styleable ListPopupWindow_android_dropDownVerticalOffset 1
+int[] styleable LoadingImageView { 0x7f030376, 0x7f030378, 0x7f030379 }
+int styleable LoadingImageView_circleCrop 0
+int styleable LoadingImageView_imageAspectRatio 1
+int styleable LoadingImageView_imageAspectRatioAdjust 2
 int[] styleable MaterialAlertDialog { 0x7f03003e, 0x7f03003f, 0x7f030040, 0x7f030041 }
 int styleable MaterialAlertDialog_backgroundInsetBottom 0
 int styleable MaterialAlertDialog_backgroundInsetEnd 1
@@ -4405,6 +4487,10 @@ int styleable ShapeableImageView_shapeAppearance 7
 int styleable ShapeableImageView_shapeAppearanceOverlay 8
 int styleable ShapeableImageView_strokeColor 9
 int styleable ShapeableImageView_strokeWidth 10
+int[] styleable SignInButton { 0x7f030375, 0x7f030377, 0x7f03037a }
+int styleable SignInButton_buttonSize 0
+int styleable SignInButton_colorScheme 1
+int styleable SignInButton_scopeUris 2
 int[] styleable Slider { 0x0101000e, 0x01010024, 0x01010146, 0x010102de, 0x010102df, 0x7f030178, 0x7f030179, 0x7f0301bc, 0x7f0301bd, 0x7f030323, 0x7f030324, 0x7f030325, 0x7f030326, 0x7f030327, 0x7f03032b, 0x7f03032c, 0x7f03032d, 0x7f030331, 0x7f03034a, 0x7f03034b, 0x7f03034c, 0x7f03034e }
 int styleable Slider_android_enabled 0
 int styleable Slider_android_value 1

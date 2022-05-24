@@ -4,6 +4,10 @@
         "source": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\build\\intermediates\\res\\merged\\debug\\layout_execute.xml.flat",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\src\\main\\res\\layout\\execute.xml"
+    },
+    {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -26,6 +30,10 @@
     {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\build\\intermediates\\res\\merged\\debug\\layout_result.xml.flat",
+        "source": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\src\\main\\res\\layout\\result.xml"
     },
     {
         "merged": "C:\\Users\\USER\\AndroidStudioProjects\\solutions-palm\\solutions\\hands\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",

@@ -40,8 +40,8 @@
 24        android:debuggable="true"
 25        android:icon="@mipmap/ic_launcher"
 25-->C:\Users\USER\AndroidStudioProjects\solutions-palm\solutions\hands\src\main\AndroidManifest.xml:20:7-41
-26        android:label="MediaPipe Hands"
-26-->C:\Users\USER\AndroidStudioProjects\solutions-palm\solutions\hands\src\main\AndroidManifest.xml:21:7-38
+26        android:label="OKSUSU"
+26-->C:\Users\USER\AndroidStudioProjects\solutions-palm\solutions\hands\src\main\AndroidManifest.xml:21:7-29
 27        android:roundIcon="@mipmap/ic_launcher_round"
 27-->C:\Users\USER\AndroidStudioProjects\solutions-palm\solutions\hands\src\main\AndroidManifest.xml:22:7-52
 28        android:supportsRtl="true"
@@ -68,34 +68,79 @@
 39        </activity>
 40
 41        <service
-41-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
-42            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
-42-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
-43            android:exported="false" >
-43-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
-44            <meta-data
-44-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
-45                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
-45-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
-46                android:value="cct" />
-46-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
-47        </service>
-48        <service
-48-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
-49            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
-49-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
-50            android:exported="false"
-50-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
-51            android:permission="android.permission.BIND_JOB_SERVICE" >
-51-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
-52        </service>
-53
-54        <receiver
-54-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
-55            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
-55-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
-56            android:exported="false" />
-56-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
-57    </application>
-58
-59</manifest>
+41-->[com.google.firebase:firebase-database:20.0.4] C:\Users\USER\.gradle\caches\transforms-3\1ce270c120c568852da84a1aa59751d6\transformed\firebase-database-20.0.4\AndroidManifest.xml:29:9-35:19
+42            android:name="com.google.firebase.components.ComponentDiscoveryService"
+42-->[com.google.firebase:firebase-database:20.0.4] C:\Users\USER\.gradle\caches\transforms-3\1ce270c120c568852da84a1aa59751d6\transformed\firebase-database-20.0.4\AndroidManifest.xml:30:13-84
+43            android:directBootAware="true"
+43-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+44            android:exported="false" >
+44-->[com.google.firebase:firebase-database:20.0.4] C:\Users\USER\.gradle\caches\transforms-3\1ce270c120c568852da84a1aa59751d6\transformed\firebase-database-20.0.4\AndroidManifest.xml:31:13-37
+45            <meta-data
+45-->[com.google.firebase:firebase-database:20.0.4] C:\Users\USER\.gradle\caches\transforms-3\1ce270c120c568852da84a1aa59751d6\transformed\firebase-database-20.0.4\AndroidManifest.xml:32:13-34:85
+46                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+46-->[com.google.firebase:firebase-database:20.0.4] C:\Users\USER\.gradle\caches\transforms-3\1ce270c120c568852da84a1aa59751d6\transformed\firebase-database-20.0.4\AndroidManifest.xml:33:17-109
+47                android:value="com.google.firebase.components.ComponentRegistrar" />
+47-->[com.google.firebase:firebase-database:20.0.4] C:\Users\USER\.gradle\caches\transforms-3\1ce270c120c568852da84a1aa59751d6\transformed\firebase-database-20.0.4\AndroidManifest.xml:34:17-82
+48        </service>
+49
+50        <activity
+50-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\.gradle\caches\transforms-3\0ac06a2301a547b87fd94031dc765dbd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+51            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+51-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\.gradle\caches\transforms-3\0ac06a2301a547b87fd94031dc765dbd\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+52            android:exported="false"
+52-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\.gradle\caches\transforms-3\0ac06a2301a547b87fd94031dc765dbd\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+53            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+53-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\USER\.gradle\caches\transforms-3\0ac06a2301a547b87fd94031dc765dbd\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+54
+55        <provider
+55-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+56            android:name="com.google.firebase.provider.FirebaseInitProvider"
+56-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+57            android:authorities="com.google.mediapipe.apps.hands.firebaseinitprovider"
+57-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+58            android:directBootAware="true"
+58-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+59            android:exported="false"
+59-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+60            android:initOrder="100" />
+60-->[com.google.firebase:firebase-common:20.1.0] C:\Users\USER\.gradle\caches\transforms-3\64339fae04d8504faac51c14d5a21c93\transformed\firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+61
+62        <meta-data
+62-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\.gradle\caches\transforms-3\71c60992993c9f553a9b847e213a3cfe\transformed\play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+63            android:name="com.google.android.gms.version"
+63-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\.gradle\caches\transforms-3\71c60992993c9f553a9b847e213a3cfe\transformed\play-services-basement-18.0.0\AndroidManifest.xml:22:13-58
+64            android:value="@integer/google_play_services_version" />
+64-->[com.google.android.gms:play-services-basement:18.0.0] C:\Users\USER\.gradle\caches\transforms-3\71c60992993c9f553a9b847e213a3cfe\transformed\play-services-basement-18.0.0\AndroidManifest.xml:23:13-66
+65
+66        <service
+66-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:29:9-35:19
+67            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+67-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:30:13-103
+68            android:exported="false" >
+68-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:31:13-37
+69            <meta-data
+69-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:32:13-34:39
+70                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+70-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:33:17-94
+71                android:value="cct" />
+71-->[com.google.android.datatransport:transport-backend-cct:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\be44630c270cd1ed0d585f7e3abed79e\transformed\transport-backend-cct-3.1.0\AndroidManifest.xml:34:17-36
+72        </service>
+73        <service
+73-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:26:9-30:19
+74            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+74-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:27:13-117
+75            android:exported="false"
+75-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:28:13-37
+76            android:permission="android.permission.BIND_JOB_SERVICE" >
+76-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:29:13-69
+77        </service>
+78
+79        <receiver
+79-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:32:9-34:40
+80            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+80-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:33:13-132
+81            android:exported="false" />
+81-->[com.google.android.datatransport:transport-runtime:3.1.0] C:\Users\USER\.gradle\caches\transforms-3\8a689c63a045aae99e0390f71511f558\transformed\transport-runtime-3.1.0\AndroidManifest.xml:34:13-37
+82    </application>
+83
+84</manifest>
