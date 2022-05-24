@@ -25,11 +25,11 @@
             android:textSize="24sp" />
     </LinearLayout>
 
+
     <FrameLayout
         android:id="@+id/preview_display_layout"
         android:layout_width="match_parent"
-        android:layout_height="480dp" />
-
+        android:layout_height="450dp" />
 
     <LinearLayout
         android:id="@+id/priview"
@@ -93,6 +93,39 @@
 
     </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/buttons_2"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_voca4"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="126dp"
+            android:layout_height="wrap_content"
+            android:text="와사삭"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_voca5"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:text="유산소"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_voca6"
+            style="?android:attr/buttonBarButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="아산시"
+            android:textColor="#000000" />
+
+    </LinearLayout>
     <LinearLayout
         android:id="@+id/text_send"
         android:layout_width="match_parent"

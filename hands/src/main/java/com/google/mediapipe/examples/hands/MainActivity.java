@@ -95,8 +95,6 @@ public class MainActivity extends AppCompatActivity {
 
   private SolutionGlSurfaceView<HandsResult> glSurfaceView;
 
-  TextView Consonant;
-
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -495,34 +493,86 @@ public class MainActivity extends AppCompatActivity {
       }
       data = gesture[maxIndex];
     }
-    Consonant = findViewById(R.id.text_view);
-    Consonant.setText(data);
+    TextView tv = findViewById(R.id.text_view);
+    tv.setText(data);
     Toast.makeText(this,"%f"+max,Toast.LENGTH_SHORT).show(); //정확도값 토스트로 띄움
 
     myRef = database.getReference(String.valueOf(data));
     myRef.addValueEventListener(new ValueEventListener() {
+      String[] word_list = new String[6];
 
       public void onDataChange(DataSnapshot dataSnapshot) {
         for (DataSnapshot snapshot : dataSnapshot.getChildren()) {
           for (DataSnapshot snapshot2 : snapshot.getChildren()) {
             Log.i("osslog", snapshot2.getValue().toString());
+            int k=0;
+
+            if (k<6) {
+              word_list[k] = snapshot2.getValue().toString();
+            }
+            if (k>=6) {
+              continue;
+            }
+            k += 1;
           }
         }
-//                String text = dataSnapshot.getValue(String.class);
-//                Message.setText(text);
-//        Log.e("osslog", dataSnapshot.toString());
-//        Log.e("osslog", dataSnapshot.getValue().toString());
-//        String value = dataSnapshot.getValue().toString();
-//        Log.e("o sslog", dataSnapshot.getKey());
-      }
 
+        TextView tv2 = findViewById(R.id.text_view2);
+        Button bt1 = findViewById(R.id.button_voca1);
+        Button bt2 = findViewById(R.id.button_voca2);
+        Button bt3 = findViewById(R.id.button_voca3);
+        Button bt4 = findViewById(R.id.button_voca4);
+        Button bt5 = findViewById(R.id.button_voca5);
+        Button bt6 = findViewById(R.id.button_voca6);
+
+        bt1.setText(word_list[0]); //btn text 바꿔줌
+        bt2.setText(word_list[1]);
+        bt3.setText(word_list[2]);
+        bt4.setText(word_list[3]);
+        bt5.setText(word_list[4]);
+        bt6.setText(word_list[5]);
+
+        bt1.setOnClickListener(new Button.OnClickListener(){ //자동완성 bt1 눌렀을 때 text 변경
+          public void onClick(View v){
+            tv2.append(word_list[0]);
+          }
+        });
+        bt2.setOnClickListener(new Button.OnClickListener(){ //자동완성 bt2 눌렀을 때 text 변경
+          public void onClick(View v){
+            tv2.setText(word_list[1]);
+          }
+        });
+        bt3.setOnClickListener(new Button.OnClickListener(){ //자동완성 bt3 눌렀을 때 text 변경
+          public void onClick(View v){
+            tv2.setText(word_list[2]);
+          }
+        });
+        bt4.setOnClickListener(new Button.OnClickListener(){ //자동완성 bt4 눌렀을 때 text 변경
+          public void onClick(View v){
+            tv2.setText(word_list[3]);
+          }
+        });
+        bt5.setOnClickListener(new Button.OnClickListener(){ //자동완성 bt5 눌렀을 때 text 변경
+          public void onClick(View v){
+            tv2.setText(word_list[4]);
+          }
+        });
+        bt6.setOnClickListener(new Button.OnClickListener(){ //자동완성 bt6 눌렀을 때 text 변경
+          public void onClick(View v){
+            tv2.setText(word_list[5]);
+          }
+        });
+      } //onDataChange
       @Override
       public void onCancelled(DatabaseError databaseError) {
-//        Toast.makeText(HandsResultGlRenderer.this,"error: " + databaseError.getMessage(), Toast.LENGTH_SHORT).show();
+        //Toast.makeText(HandsResultGlRenderer.this,"error: " + databaseError.getMessage(), Toast.LENGTH_SHORT).show();
       }
-    });
 
-  }
+    }); //myRef.addValueEventListener
+
+  } //makeAngle
+
+
 
   private Interpreter getTfliteInterpreter(String modelPath){
     try {
